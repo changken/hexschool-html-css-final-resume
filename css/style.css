@@ -1,0 +1,319 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*  */
+* {
+  box-sizing: border-box;
+  font-family: 'MicrosoftJhengHeiRegular';
+}
+
+/* header */
+.wrap {
+  width: 1024px;
+  margin: 0 auto;
+  background: #fafafa;
+}
+
+header {
+  display: flex;
+  background: url('../images/img-headerShape.png') no-repeat;
+  height: 399px;
+}
+
+header .personal-info {
+  margin-top: 135px;
+  margin-left: 135px;
+  margin-right: 136px;
+  text-align: center;
+}
+
+.personal-info img {
+  margin-bottom: 11px;
+}
+
+.personal-info h1 {
+  font-size: 42px;
+  margin-bottom: 9px;
+}
+
+.personal-info p {
+  font-size: 14px;
+  color: #4a4a4a;
+  margin-bottom: 8px;
+}
+
+header .contact-info {
+  margin-top: 135px;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.contact-info img {
+  margin-right: 12px;
+}
+
+.contact-info-item span {
+  color: #fff;
+  font-size: 18px;
+}
+
+/* modern web skill */
+.skills {
+  margin: 130px 0 56px;
+}
+
+.skills h2 {
+  font-weight: bold;
+  color: #1736dc;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.skill-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.skill-item {
+  width: 284px;
+  padding: 33px 32px 27px 32px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.skill-item:first-child {
+  border-bottom: 6px solid #f58d23;
+}
+
+.skill-item:nth-child(2) {
+  border-bottom: 6px solid #539e43;
+}
+
+.skill-item:last-child {
+  border-bottom: 6px solid #6762a6;
+}
+
+.skill-item img {
+  display: block;
+  margin: 0 auto 25px;
+}
+
+.skill-item h3 {
+  margin-bottom: 26px;
+  text-align: center;
+  color: #4a4a4a;
+  font-size: 18px;
+}
+
+.skill-item ul {
+  list-style: disc;
+  font-size: 10px;
+  color: #4a4a4a;
+}
+
+.skill-item li {
+  line-height: 1.4;
+}
+
+/* Experience */
+.experience {
+  padding-bottom: 56px;
+  position: relative;
+}
+
+.experience h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #1736dc;
+  font-weight: bold;
+  margin-bottom: 48px;
+}
+
+.experience img.hex-shape {
+  display: block;
+  margin: 0 auto;
+}
+
+.experience .vertical-line {
+  position: absolute;
+  width: 2px;
+  height: 513.6px;
+  background: #d8d8d8;
+  left: 50%;
+  top: 109px;
+}
+
+.experience .bottom-line {
+  position: absolute;
+  width: 46px;
+  height: 4px;
+  background: #d8d8d8;
+  left: 48%;
+  bottom: 0;
+}
+
+.experience-content {
+  width: 570px;
+  height: 422px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 46px 0;
+}
+
+.experience-content .experience-item {
+  position: relative;
+  width: 260px;
+  border: 1px solid #000;
+}
+
+.experience-item:nth-child(2n-1) img {
+  position: absolute;
+  top: 0;
+  left: -37px;
+  z-index: 10;
+}
+
+.experience-item:nth-child(2n) {
+  align-self: flex-start;
+}
+
+.experience-item:nth-child(2n) img {
+  position: absolute;
+  top: 0;
+  right: -37px;
+  z-index: 10;
+}
