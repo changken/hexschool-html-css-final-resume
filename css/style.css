@@ -202,7 +202,7 @@ header .contact-info {
 
 .skill-content {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .skill-item {
@@ -210,6 +210,7 @@ header .contact-info {
   padding: 33px 32px 27px 32px;
   background: #fff;
   border-radius: 5px;
+  margin-right: 17px;
 }
 
 .skill-item:first-child {
@@ -366,12 +367,13 @@ header .contact-info {
 
 .work-content {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .work-content .work-item {
   width: 284px;
   background: #fff;
+  margin-right: 16px;
   transition: box-shadow 0.5s;
 }
 
