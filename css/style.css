@@ -141,15 +141,16 @@ table {
 }
 
 header {
+  position: relative;
   display: flex;
   background: url('../images/img-headerShape.png') no-repeat;
   height: 399px;
 }
 
 header .personal-info {
-  margin-top: 135px;
-  margin-left: 135px;
-  margin-right: 136px;
+  position: absolute;
+  top: 125px;
+  left: 135px;
   text-align: center;
 }
 
@@ -169,7 +170,9 @@ header .personal-info {
 }
 
 header .contact-info {
-  margin-top: 135px;
+  position: absolute;
+  top: 125px;
+  left: 422px;
 }
 
 .contact-info-item {
@@ -250,8 +253,6 @@ header .contact-info {
 /* Experience */
 .experience {
   margin-bottom: 56px;
-  padding-bottom: 56px;
-  position: relative;
 }
 
 .experience h2 {
@@ -262,39 +263,41 @@ header .contact-info {
   margin-bottom: 48px;
 }
 
-.experience img.hex-shape {
-  display: block;
-  margin: 0 auto;
-}
-
-.experience .vertical-line {
-  position: absolute;
-  width: 2px;
-  height: 475px;
-  /* height: 513.6px; */
-  background: #d8d8d8;
-  left: 50%;
-  top: 109px;
-}
-
-.experience .bottom-line {
-  position: absolute;
-  width: 46px;
-  height: 4px;
-  background: #d8d8d8;
-  left: 48%;
-  bottom: 0;
-}
-
 .experience-content {
+  position: relative;
   width: 570px;
-  height: 422px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-around;
   padding: 92px 0 46px;
+}
+
+.experience-content img.hex-shape {
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  top: 0;
+  left: 47.4%;
+}
+
+.experience-content .vertical-line {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: #d8d8d8;
+  top: 0;
+  left: 50%;
+}
+
+.experience-content .bottom-line {
+  position: absolute;
+  width: 46px;
+  height: 4px;
+  background: #d8d8d8;
+  left: 46.2%;
+  bottom: 0;
 }
 
 .experience-content .experience-item {
@@ -332,19 +335,19 @@ header .contact-info {
   margin-bottom: 0;
 }
 
-.experience-item:nth-child(2n-1) img {
+.experience-item:nth-of-type(2n-1) img {
   position: absolute;
   top: 0;
   left: -37px;
   z-index: 10;
 }
 
-.experience-item:nth-child(2n) {
+.experience-item:nth-of-type(2n) {
   align-self: flex-start;
   text-align: right;
 }
 
-.experience-item:nth-child(2n) img {
+.experience-item:nth-of-type(2n) img {
   position: absolute;
   top: 0;
   right: -38px;

@@ -3,7 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resume</title>
+    <title>梅介其</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="keywords" content="梅介其, 個人履歷, Web Developer" />
+    <meta
+      name="description"
+      content="具有八年的網頁開發以及介面設計經驗，在 Github 上參與數個開源專案，熟悉原生 JavaScript EM6 開發，以及 VueJS, reactJS 等前端框架。"
+    />
+
+    <!-- facebook -->
+    <meta property="og:title" content="梅介其" />
+    <meta
+      property="og:description"
+      content="具有八年的網頁開發以及介面設計經驗，在 Github 上參與數個開源專案，熟悉原生 JavaScript EM6 開發，以及 VueJS, reactJS 等前端框架。"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://changken.github.io/hexschool-html-css-final-resume/"
+    />
+    <meta property="og:image" content="images/about.png" />
+
+    <!-- ie相容 使用最新的做渲染 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -15,25 +38,25 @@
           <p>breanne.zulauf</p>
           <p>Web Developer</p>
         </div>
-        <div class="contact-info">
-          <div class="contact-info-item">
+        <ul class="contact-info">
+          <li class="contact-info-item">
             <img src="images/Icon-location.png" alt="地點" />
             <span>Taipei / San Francisco</span>
-          </div>
-          <div class="contact-info-item">
+          </li>
+          <li class="contact-info-item">
             <img src="images/Icon-mail.png" alt="電子郵件" />
             <span>breanne.zulauf@gerson.tv</span>
-          </div>
-          <div class="contact-info-item">
+          </li>
+          <li class="contact-info-item">
             <img src="images/icon-github.png" alt="github" />
             <span>breanne.zulauf</span>
-          </div>
-        </div>
+          </li>
+        </ul>
       </header>
       <section class="skills">
         <h2>Modern Web Skills</h2>
-        <div class="skill-content">
-          <div class="skill-item">
+        <ul class="skill-content">
+          <li class="skill-item">
             <img src="images/img-skill-icon-1.png" alt="Web Layout" />
             <h3>Web Layout</h3>
             <ul>
@@ -42,8 +65,8 @@
               <li>FB pixel、schema.org</li>
               <li>大型電子商務版型規劃經驗 (2 years）</li>
             </ul>
-          </div>
-          <div class="skill-item">
+          </li>
+          <li class="skill-item">
             <img src="images/img-skill-icon-2.png" alt="JavaScript & Node.js" />
             <h3>JavaScript & Node.js</h3>
             <ul>
@@ -52,8 +75,8 @@
               <li>Vue.js (1 years)</li>
               <li>Node.js / express</li>
             </ul>
-          </div>
-          <div class="skill-item">
+          </li>
+          <li class="skill-item">
             <img src="images/img-skill-icon-3.png" alt="Dev Helper" />
             <h3>Dev Helper</h3>
             <ul>
@@ -62,13 +85,16 @@
               <li>gulp / webpack</li>
               <li>介接歐付寶、玉山銀行金流經驗</li>
             </ul>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
       <section class="experience">
         <h2>Experience</h2>
-        <img src="images/dot-start.png" alt="六角形" class="hex-shape" />
+
         <div class="experience-content">
+          <img src="images/dot-start.png" alt="六角形" class="hex-shape" />
+          <div class="vertical-line"></div>
+          <div class="bottom-line"></div>
           <div class="experience-item">
             <img src="images/dot-timeItem.png" alt="六角形2" />
             <p>2016/01 - Present</p>
@@ -100,13 +126,11 @@
             </p>
           </div>
         </div>
-        <div class="vertical-line"></div>
-        <div class="bottom-line"></div>
       </section>
       <section class="works">
         <h2>Works 作品</h2>
-        <div class="work-content">
-          <div class="work-item">
+        <ul class="work-content">
+          <li class="work-item">
             <div class="work-img">
               <img src="images/logo-work-1.png" alt="作品1" />
             </div>
@@ -114,8 +138,8 @@
               <h3>Works 1 title</h3>
               <p>Lorem ipsum dolor sit amet</p>
             </div>
-          </div>
-          <div class="work-item">
+          </li>
+          <li class="work-item">
             <div class="work-img">
               <img src="images/logo-work-2.png" alt="作品2" />
             </div>
@@ -123,8 +147,8 @@
               <h3>Works 2 title</h3>
               <p>Lorem ipsum dolor sit amet</p>
             </div>
-          </div>
-          <div class="work-item">
+          </li>
+          <li class="work-item">
             <div class="work-img">
               <img src="images/logo-work-3.png" alt="作品3" />
             </div>
@@ -132,8 +156,8 @@
               <h3>Works 3 title</h3>
               <p>Lorem ipsum dolor sit amet</p>
             </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
       <section class="about">
         <h2>About 梅介其</h2>
